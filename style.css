@@ -1,0 +1,82 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Calibri;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: #f1948a;
+}
+
+.wrapper{
+	height: 260px;
+	background-color: #fff;
+	max-width: 410px;
+	border-radius: 7px;
+	padding: 16px 25px;
+	transition: height 0.2s ease;
+}
+
+.wrapper.active{
+	height: 510px;
+}
+
+header h1{
+	font-size: 21px;
+	font-weight: 500;
+	font-family: Century Gothic;
+}
+
+header p{
+	font-size: 16px;
+	color: #474747;
+	margin-top: 5px;
+}
+
+.wrapper .form{
+	margin: 20px 0 25px;
+}
+
+.form :where(input, button){
+	width: 100%;
+	height: 55px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+
+.form input{
+	font-size: 18px;
+	border: 1px solid #999;
+	padding: 0 17px;
+}
+
+.form button{
+	background-color: #ec7063;
+	margin-top: 15px;
+	font-size: 17px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.wrapper .qr-code{
+	opacity: 0;
+	pointer-events: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 33px 0;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.wrapper.active .qr-code{
+	opacity: 1;
+	pointer-events: auto;
+	transition: opacity 0.5s 0.05s ease;
+}
