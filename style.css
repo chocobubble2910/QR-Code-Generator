@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600;700$display=swap');
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: Calibri;
+	font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -30,6 +31,7 @@ header h1{
 	font-size: 21px;
 	font-weight: 500;
 	font-family: Century Gothic;
+	color: #b03a2e;
 }
 
 header p{
@@ -52,8 +54,9 @@ header p{
 
 .form input{
 	font-size: 18px;
-	border: 1px solid #999;
+	border: 1px solid #b03a2e;
 	padding: 0 17px;
+	color: #b03a2e;
 }
 
 .form button{
